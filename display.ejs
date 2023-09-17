@@ -40,27 +40,32 @@
     <style>
         /* Style for the dream cards */
         body{
-            background-color: #2e3345;
+            background-color: #323946;
         }
         .dream-card {
+            
             border: 1px solid #ccc;
             padding: 10px;
             margin: 10px;
             ;
-            width:500px;
-            height:300px;
+            width:300px;
+            height:200px;
             color:aqua;
-            background-color: rgb(24, 40, 40);
+            background-color: #1f242d;
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         }
         .dr{
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
         }
         h1{
             color: white;
             text-align: center;
             text-decoration: wavy;
+        }
+        strong{
+            color: white;
         }
     </style>
 </head>
@@ -69,7 +74,7 @@
     <div class="dr">
     <% dreams.forEach((dream) => { %>
         <div class="dream-card">
-            <h2><strong>Name:</strong> <%= dream.name %></h2>
+            <h2><strong></strong> <%= dream.name %></h2>
             <p><strong>Email:</strong> <%= dream.email %></p>
             <p><strong>Phone:</strong> <%= dream.phone %></p>
             <p><strong>Dream:</strong> <%= dream.dream %></p>
