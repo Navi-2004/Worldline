@@ -1,0 +1,80 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams</title>
+</head>
+<body>
+    <h1>Dreams</h1>
+    
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams</title>
+</head>
+<body>
+    <h1>Display Dreams</h1>
+    <ul>
+        <% dreams.forEach((dream) => { %>
+            <li>
+                <strong>Name:</strong> <%= dream.name %><br>
+                <strong>Email:</strong> <%= dream.email %><br>
+                <strong>Phone:</strong> <%= dream.phone %><br>
+                <strong>Dream:</strong> <%= dream.dream %><br>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams</title>
+    <style>
+        /* Style for the dream cards */
+        body{
+            background-color: #2e3345;
+        }
+        .dream-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            ;
+            width:500px;
+            height:300px;
+            color:aqua;
+            background-color: rgb(24, 40, 40);
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        .dr{
+            display: flex;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            text-decoration: wavy;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Dreams</h1>
+    <div class="dr">
+    <% dreams.forEach((dream) => { %>
+        <div class="dream-card">
+            <h2><strong>Name:</strong> <%= dream.name %></h2>
+            <p><strong>Email:</strong> <%= dream.email %></p>
+            <p><strong>Phone:</strong> <%= dream.phone %></p>
+            <p><strong>Dream:</strong> <%= dream.dream %></p>
+        </div>
+    <% }); %>
+</div>
+</body>
+</html>
