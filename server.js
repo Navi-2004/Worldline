@@ -8,6 +8,7 @@ app.set("views", __dirname);
 
 app.use(bodyParser.urlencoded({extended:true}));
 
+mongoose.set('strictQuery', false);
 
 mongoose.connect("mongodb+srv://navi:E2ISsvSLzJ1EXKNE@cluster0.fdvsej2.mongodb.net/worldline",{useNewUrlParser:true},)
 .then(() => console.log("MongoDB connected"))
